@@ -1,0 +1,8 @@
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\1.TextToConsole\1.TextToConsole\bin\Debug\1.TextToConsole.exe.config
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\1.TextToConsole\1.TextToConsole\bin\Debug\1.TextToConsole.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\1.TextToConsole\1.TextToConsole\bin\Debug\1.TextToConsole.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\1.TextToConsole\1.TextToConsole\obj\Debug\1.TextToConsole.csproj.AssemblyReference.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\1.TextToConsole\1.TextToConsole\obj\Debug\1.TextToConsole.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\1.TextToConsole\1.TextToConsole\obj\Debug\1.TextToConsole.csproj.CoreCompileInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\1.TextToConsole\1.TextToConsole\obj\Debug\1.TextToConsole.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\1.TextToConsole\1.TextToConsole\obj\Debug\1.TextToConsole.pdb

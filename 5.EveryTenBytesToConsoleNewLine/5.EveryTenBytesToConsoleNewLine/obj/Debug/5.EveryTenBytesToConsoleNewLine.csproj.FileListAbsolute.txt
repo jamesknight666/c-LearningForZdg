@@ -1,0 +1,8 @@
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine\obj\Debug\5.EveryTenBytesToConsoleNewLine.csproj.AssemblyReference.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine\obj\Debug\5.EveryTenBytesToConsoleNewLine.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine\obj\Debug\5.EveryTenBytesToConsoleNewLine.csproj.CoreCompileInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine\bin\Debug\5.EveryTenBytesToConsoleNewLine.exe.config
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine\bin\Debug\5.EveryTenBytesToConsoleNewLine.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine\bin\Debug\5.EveryTenBytesToConsoleNewLine.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine\obj\Debug\5.EveryTenBytesToConsoleNewLine.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine\obj\Debug\5.EveryTenBytesToConsoleNewLine.pdb

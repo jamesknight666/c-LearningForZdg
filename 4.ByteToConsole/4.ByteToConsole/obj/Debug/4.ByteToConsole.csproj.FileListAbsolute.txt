@@ -1,0 +1,8 @@
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\4.ByteToConsole\4.ByteToConsole\bin\Debug\4.ByteToConsole.exe.config
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\4.ByteToConsole\4.ByteToConsole\bin\Debug\4.ByteToConsole.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\4.ByteToConsole\4.ByteToConsole\bin\Debug\4.ByteToConsole.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\4.ByteToConsole\4.ByteToConsole\obj\Debug\4.ByteToConsole.csproj.AssemblyReference.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\4.ByteToConsole\4.ByteToConsole\obj\Debug\4.ByteToConsole.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\4.ByteToConsole\4.ByteToConsole\obj\Debug\4.ByteToConsole.csproj.CoreCompileInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\4.ByteToConsole\4.ByteToConsole\obj\Debug\4.ByteToConsole.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\4.ByteToConsole\4.ByteToConsole\obj\Debug\4.ByteToConsole.pdb

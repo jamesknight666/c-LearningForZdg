@@ -1,0 +1,8 @@
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextToText\TextToText\bin\Debug\TextToText.exe.config
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextToText\TextToText\bin\Debug\TextToText.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextToText\TextToText\bin\Debug\TextToText.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextToText\TextToText\obj\Debug\TextToText.csproj.AssemblyReference.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextToText\TextToText\obj\Debug\TextToText.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextToText\TextToText\obj\Debug\TextToText.csproj.CoreCompileInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextToText\TextToText\obj\Debug\TextToText.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextToText\TextToText\obj\Debug\TextToText.pdb
