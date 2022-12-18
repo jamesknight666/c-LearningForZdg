@@ -1,0 +1,15 @@
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\bin\Debug\net7.0\1.TextToConsole.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\bin\Debug\net7.0\1.TextToConsole.deps.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\bin\Debug\net7.0\1.TextToConsole.runtimeconfig.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\bin\Debug\net7.0\1.TextToConsole.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\bin\Debug\net7.0\1.TextToConsole.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\1.TextToConsole.csproj.AssemblyReference.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\1.TextToConsole.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\1.TextToConsole.AssemblyInfoInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\1.TextToConsole.AssemblyInfo.cs
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\1.TextToConsole.csproj.CoreCompileInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\1.TextToConsole.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\refint\1.TextToConsole.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\1.TextToConsole.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\1.TextToConsole.genruntimeconfig.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\ref\1.TextToConsole.dll
