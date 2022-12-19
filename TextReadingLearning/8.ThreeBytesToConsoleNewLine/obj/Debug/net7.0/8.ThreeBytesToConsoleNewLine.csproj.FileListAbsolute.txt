@@ -1,0 +1,15 @@
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\bin\Debug\net7.0\8.ThreeBytesToConsoleNewLine.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\bin\Debug\net7.0\8.ThreeBytesToConsoleNewLine.deps.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\bin\Debug\net7.0\8.ThreeBytesToConsoleNewLine.runtimeconfig.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\bin\Debug\net7.0\8.ThreeBytesToConsoleNewLine.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\bin\Debug\net7.0\8.ThreeBytesToConsoleNewLine.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\obj\Debug\net7.0\8.ThreeBytesToConsoleNewLine.csproj.AssemblyReference.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\obj\Debug\net7.0\8.ThreeBytesToConsoleNewLine.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\obj\Debug\net7.0\8.ThreeBytesToConsoleNewLine.AssemblyInfoInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\obj\Debug\net7.0\8.ThreeBytesToConsoleNewLine.AssemblyInfo.cs
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\obj\Debug\net7.0\8.ThreeBytesToConsoleNewLine.csproj.CoreCompileInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\obj\Debug\net7.0\8.ThreeBytesToConsoleNewLine.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\obj\Debug\net7.0\refint\8.ThreeBytesToConsoleNewLine.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\obj\Debug\net7.0\8.ThreeBytesToConsoleNewLine.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\obj\Debug\net7.0\8.ThreeBytesToConsoleNewLine.genruntimeconfig.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\8.ThreeBytesToConsoleNewLine\obj\Debug\net7.0\ref\8.ThreeBytesToConsoleNewLine.dll

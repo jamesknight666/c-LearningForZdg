@@ -1,0 +1,15 @@
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\bin\Debug\net7.0\9.ThreeBytesToAnotherFile.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\bin\Debug\net7.0\9.ThreeBytesToAnotherFile.deps.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\bin\Debug\net7.0\9.ThreeBytesToAnotherFile.runtimeconfig.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\bin\Debug\net7.0\9.ThreeBytesToAnotherFile.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\bin\Debug\net7.0\9.ThreeBytesToAnotherFile.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\9.ThreeBytesToAnotherFile.csproj.AssemblyReference.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\9.ThreeBytesToAnotherFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\9.ThreeBytesToAnotherFile.AssemblyInfoInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\9.ThreeBytesToAnotherFile.AssemblyInfo.cs
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\9.ThreeBytesToAnotherFile.csproj.CoreCompileInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\9.ThreeBytesToAnotherFile.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\refint\9.ThreeBytesToAnotherFile.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\9.ThreeBytesToAnotherFile.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\9.ThreeBytesToAnotherFile.genruntimeconfig.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\ref\9.ThreeBytesToAnotherFile.dll

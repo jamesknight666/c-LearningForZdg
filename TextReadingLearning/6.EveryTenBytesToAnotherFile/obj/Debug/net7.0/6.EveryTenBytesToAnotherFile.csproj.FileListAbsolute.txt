@@ -1,0 +1,15 @@
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\bin\Debug\net7.0\6.EveryTenBytesToAnotherFile.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\bin\Debug\net7.0\6.EveryTenBytesToAnotherFile.deps.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\bin\Debug\net7.0\6.EveryTenBytesToAnotherFile.runtimeconfig.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\bin\Debug\net7.0\6.EveryTenBytesToAnotherFile.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\bin\Debug\net7.0\6.EveryTenBytesToAnotherFile.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\6.EveryTenBytesToAnotherFile.csproj.AssemblyReference.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\6.EveryTenBytesToAnotherFile.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\6.EveryTenBytesToAnotherFile.AssemblyInfoInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\6.EveryTenBytesToAnotherFile.AssemblyInfo.cs
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\6.EveryTenBytesToAnotherFile.csproj.CoreCompileInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\6.EveryTenBytesToAnotherFile.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\refint\6.EveryTenBytesToAnotherFile.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\6.EveryTenBytesToAnotherFile.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\6.EveryTenBytesToAnotherFile.genruntimeconfig.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\ref\6.EveryTenBytesToAnotherFile.dll

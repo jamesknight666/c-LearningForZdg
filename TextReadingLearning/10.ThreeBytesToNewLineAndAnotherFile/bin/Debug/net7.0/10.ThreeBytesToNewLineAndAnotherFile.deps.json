@@ -1,0 +1,47 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "10.ThreeBytesToNewLineAndAnotherFile/1.0.0": {
+        "dependencies": {
+          "8.ThreeBytesToConsoleNewLine": "1.0.0",
+          "9.ThreeBytesToAnotherFile": "1.0.0"
+        },
+        "runtime": {
+          "10.ThreeBytesToNewLineAndAnotherFile.dll": {}
+        }
+      },
+      "8.ThreeBytesToConsoleNewLine/1.0.0": {
+        "runtime": {
+          "8.ThreeBytesToConsoleNewLine.dll": {}
+        }
+      },
+      "9.ThreeBytesToAnotherFile/1.0.0": {
+        "runtime": {
+          "9.ThreeBytesToAnotherFile.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "10.ThreeBytesToNewLineAndAnotherFile/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "8.ThreeBytesToConsoleNewLine/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "9.ThreeBytesToAnotherFile/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

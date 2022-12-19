@@ -5,9 +5,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TextToText
+namespace _23.TextToText
 {
-    class Program
+    class Program23
     {
         static void Main()
         {

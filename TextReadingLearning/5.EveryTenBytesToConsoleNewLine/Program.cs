@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 
 namespace _5.EveryTenBytesToConsoleNewLine
 {
-    internal class Program
+    public class Program5
     {
-        static void Main(string[] args)
+        public static void EveryTenBytesToConsoleNewLine(string ReadPath)
         {
-            using (FileStream fs = new FileStream(@"C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\Test1.txt", FileMode.OpenOrCreate, FileAccess.Read))
+            using (FileStream fs = new FileStream(ReadPath, FileMode.OpenOrCreate, FileAccess.Read))
             {
                 while (true)
                 {
@@ -23,12 +23,16 @@ namespace _5.EveryTenBytesToConsoleNewLine
                     {
                         string s = Convert.ToString(b, 2);
                         if (s != "0")
-                        Console.Write("{0}  ", s);
+                            Console.Write("{0}  ", s);
                     }
                     Console.Write('\n');
                 }
             }
-            Console.ReadLine();
+        }
+        static void Main(string[] args)
+        {
+            string ReadPath = "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test1.txt";
+            EveryTenBytesToConsoleNewLine(ReadPath);
         }
     }
 }

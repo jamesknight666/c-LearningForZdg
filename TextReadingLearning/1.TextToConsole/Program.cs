@@ -8,7 +8,7 @@ using System.Runtime.CompilerServices;
 
 namespace _1.TextToConsole
 {
-    class program
+    class program1
     {
         static void Main()
         {
