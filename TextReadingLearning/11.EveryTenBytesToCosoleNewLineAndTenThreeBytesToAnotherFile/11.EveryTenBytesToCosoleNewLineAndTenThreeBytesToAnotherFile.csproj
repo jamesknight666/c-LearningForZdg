@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net7.0</TargetFramework>
+    <RootNamespace>_11.EveryTenBytesToCosoleNewLineAndTenThreeBytesToAnotherFile</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine.csproj" />
+  </ItemGroup>
+
+</Project>

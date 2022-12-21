@@ -13,15 +13,21 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.ByteToConsole", "4.ByteTo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.EveryTenBytesToConsoleNewLine", "5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine.csproj", "{9A8F0584-9009-4B22-A799-A08D9DE3E844}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "6.EveryTenBytesToAnotherFile", "6.EveryTenBytesToAnotherFile\6.EveryTenBytesToAnotherFile.csproj", "{340C5EE8-E626-4C48-9636-44EA5E127BD6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "6.EveryTenBytesToAnotherFile", "6.EveryTenBytesToAnotherFile\6.EveryTenBytesToAnotherFile.csproj", "{340C5EE8-E626-4C48-9636-44EA5E127BD6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "7.EveryTenBytesToNewLineAndAnotherFile", "7.EveryTenBytesToNewLineAndAnotherFile\7.EveryTenBytesToNewLineAndAnotherFile.csproj", "{3B4A3714-5E74-480E-BACB-7FC411818BB4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "7.EveryTenBytesToNewLineAndAnotherFile", "7.EveryTenBytesToNewLineAndAnotherFile\7.EveryTenBytesToNewLineAndAnotherFile.csproj", "{3B4A3714-5E74-480E-BACB-7FC411818BB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "8.ThreeBytesToConsoleNewLine", "8.ThreeBytesToConsoleNewLine\8.ThreeBytesToConsoleNewLine.csproj", "{F8156085-F839-4A35-93D1-20C75A6F99DF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "8.ThreeBytesToConsoleNewLine", "8.ThreeBytesToConsoleNewLine\8.ThreeBytesToConsoleNewLine.csproj", "{F8156085-F839-4A35-93D1-20C75A6F99DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "9.ThreeBytesToAnotherFile", "9.ThreeBytesToAnotherFile\9.ThreeBytesToAnotherFile.csproj", "{8F38F603-71E1-4336-B73F-4244606EC9B1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "9.ThreeBytesToAnotherFile", "9.ThreeBytesToAnotherFile\9.ThreeBytesToAnotherFile.csproj", "{8F38F603-71E1-4336-B73F-4244606EC9B1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10.ThreeBytesToNewLineAndAnotherFile", "10.ThreeBytesToNewLineAndAnotherFile\10.ThreeBytesToNewLineAndAnotherFile.csproj", "{2B827DF2-BC00-4029-A3A4-D9C746B50ADD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "10.ThreeBytesToNewLineAndAnotherFile", "10.ThreeBytesToNewLineAndAnotherFile\10.ThreeBytesToNewLineAndAnotherFile.csproj", "{2B827DF2-BC00-4029-A3A4-D9C746B50ADD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "13.DeleteThreeStringsInFiles12", "13.DeleteThreeStringsInFiles12\13.DeleteThreeStringsInFiles12.csproj", "{740511C3-B298-4F19-B148-10483F8F78E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.EveryTenBytesPlusThreeStringsToAnotherFile", "12.EveryTenBytesPlusThreeStringsToAnotherFile\12.EveryTenBytesPlusThreeStringsToAnotherFile.csproj", "{F855E43C-9986-4EDD-BA4F-5B8D12700C69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11.EveryTenBytesToCosoleNewLineAndTenThreeBytesToAnotherFile", "11.EveryTenBytesToCosoleNewLineAndTenThreeBytesToAnotherFile\11.EveryTenBytesToCosoleNewLineAndTenThreeBytesToAnotherFile.csproj", "{B7B4F1C5-FA5F-4AC3-B1D2-19826B1FABE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +75,18 @@ Global
 		{2B827DF2-BC00-4029-A3A4-D9C746B50ADD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2B827DF2-BC00-4029-A3A4-D9C746B50ADD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2B827DF2-BC00-4029-A3A4-D9C746B50ADD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{740511C3-B298-4F19-B148-10483F8F78E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{740511C3-B298-4F19-B148-10483F8F78E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{740511C3-B298-4F19-B148-10483F8F78E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{740511C3-B298-4F19-B148-10483F8F78E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F855E43C-9986-4EDD-BA4F-5B8D12700C69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F855E43C-9986-4EDD-BA4F-5B8D12700C69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F855E43C-9986-4EDD-BA4F-5B8D12700C69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F855E43C-9986-4EDD-BA4F-5B8D12700C69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B7B4F1C5-FA5F-4AC3-B1D2-19826B1FABE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B4F1C5-FA5F-4AC3-B1D2-19826B1FABE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B4F1C5-FA5F-4AC3-B1D2-19826B1FABE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B4F1C5-FA5F-4AC3-B1D2-19826B1FABE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

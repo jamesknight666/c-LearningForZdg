@@ -15,8 +15,8 @@ namespace _7.EveryTenBytesToConsoleNewLineAndAnotherFile
         {
             string ReadPath = "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\test1.txt";
             string WritePath = "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg";
-            Program6.EveryTenBytesToAnotherFile(ReadPath, WritePath, 7);
-            Program5.EveryTenBytesToConsoleNewLine(ReadPath);
+            Program6.EveryTenBytesToAnotherFile(ReadPath, WritePath, 7, 2);
+            Program5.EveryTenBytesToConsoleNewLine(ReadPath,2);
         }
     }
 }

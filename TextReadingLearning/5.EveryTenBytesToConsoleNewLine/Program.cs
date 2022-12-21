@@ -9,7 +9,7 @@ namespace _5.EveryTenBytesToConsoleNewLine
 {
     public class Program5
     {
-        public static void EveryTenBytesToConsoleNewLine(string ReadPath)
+        public static void EveryTenBytesToConsoleNewLine(string ReadPath,int jinzhi)
         {
             using (FileStream fs = new FileStream(ReadPath, FileMode.OpenOrCreate, FileAccess.Read))
             {
@@ -21,7 +21,7 @@ namespace _5.EveryTenBytesToConsoleNewLine
                         break;
                     foreach (byte b in by)
                     {
-                        string s = Convert.ToString(b, 2);
+                        string s = Convert.ToString(b, jinzhi);
                         if (s != "0")
                             Console.Write("{0}  ", s);
                     }
@@ -32,7 +32,7 @@ namespace _5.EveryTenBytesToConsoleNewLine
         static void Main(string[] args)
         {
             string ReadPath = "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test1.txt";
-            EveryTenBytesToConsoleNewLine(ReadPath);
+            EveryTenBytesToConsoleNewLine(ReadPath,2);
         }
     }
 }

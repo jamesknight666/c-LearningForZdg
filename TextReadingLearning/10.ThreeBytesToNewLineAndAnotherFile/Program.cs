@@ -15,8 +15,8 @@ namespace _10.ThreeBytesToNewLineAndAnotherFile
         {
             string ReadPath = "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\test2.txt";
             string WritePath = "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg";
-            Program9.ThreeBytesToAnotherFile(ReadPath, WritePath, 10);
-            Program8.ThreeBytesToConsoleNewLine(ReadPath);
+            Program9.ThreeBytesToAnotherFile(ReadPath, WritePath, 10,16);
+            Program8.ThreeBytesToConsoleNewLine(ReadPath,16);
         }
     }
 }

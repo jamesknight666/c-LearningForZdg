@@ -9,7 +9,7 @@ namespace _9.ThreeBytesToAnotherFile
 {
     public class Program9
     {
-        public static void ThreeBytesToAnotherFile(string ReadPath, string WritePath, int ProjNum)
+        public static void ThreeBytesToAnotherFile(string ReadPath, string WritePath, int ProjNum,int jinzhi)
         {
             using (FileStream fr = new FileStream(ReadPath, FileMode.OpenOrCreate, FileAccess.Read))
             {
@@ -18,8 +18,8 @@ namespace _9.ThreeBytesToAnotherFile
                 StreamWriter fw = new StreamWriter(WritePath + "\\" + ProjNum + "." + i + ".txt");
                 while ((r = fr.ReadByte()) != -1)
                 {
-                    string s = Convert.ToString(r, 16);
-                    if (String.Compare(s, "31") == 0 || String.Compare(s, "32") == 0 || String.Compare(s, "33") == 0)
+                    string s = Convert.ToString(r, jinzhi);
+                    if (r==0x31||r==0x32||r==0x33)
                     {
                         fw.Flush();
                         fw.Close();
@@ -37,7 +37,7 @@ namespace _9.ThreeBytesToAnotherFile
         {
             string ReadPath = "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test2.txt";
             string WritePath = "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg";
-            ThreeBytesToAnotherFile(ReadPath, WritePath, 9);
+            ThreeBytesToAnotherFile(ReadPath, WritePath, 9,16);
 
         }
     }
