@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TextReadingLearning", "Text
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1.TextToConsole", "1.TextToConsole\1.TextToConsole.csproj", "{86DA6792-4FDB-4CC0-9571-FC4CE5FCF78C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2-3.TextToText", "2-3.TextToText\2-3.TextToText.csproj", "{7067298A-02DA-4F2D-BE3F-12AC33F70381}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "4.ByteToConsole", "4.ByteToConsole\4.ByteToConsole.csproj", "{C364C24F-A4D0-4D47-81B5-BA1C48D22E9A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "5.EveryTenBytesToConsoleNewLine", "5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine.csproj", "{9A8F0584-9009-4B22-A799-A08D9DE3E844}"
@@ -29,6 +27,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "12.EveryTenBytesPlusThreeSt
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11.EveryTenBytesToCosoleNewLineAndTenThreeBytesToAnotherFile", "11.EveryTenBytesToCosoleNewLineAndTenThreeBytesToAnotherFile\11.EveryTenBytesToCosoleNewLineAndTenThreeBytesToAnotherFile.csproj", "{B7B4F1C5-FA5F-4AC3-B1D2-19826B1FABE0}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamingForAll", "StreamingForAll\StreamingForAll.csproj", "{34949103-DCE1-4923-8EA2-FC66B3689254}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.TextToText", "2.TextToText\2.TextToText.csproj", "{0BDF8F28-DF41-4AF0-8DC6-CCCBADE240E1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.TextToTextByLine", "3.TextToTextByLine\3.TextToTextByLine.csproj", "{B66BDA2C-FE2A-4C87-8254-B51749FEAA58}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,10 +47,6 @@ Global
 		{86DA6792-4FDB-4CC0-9571-FC4CE5FCF78C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{86DA6792-4FDB-4CC0-9571-FC4CE5FCF78C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{86DA6792-4FDB-4CC0-9571-FC4CE5FCF78C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7067298A-02DA-4F2D-BE3F-12AC33F70381}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7067298A-02DA-4F2D-BE3F-12AC33F70381}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7067298A-02DA-4F2D-BE3F-12AC33F70381}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7067298A-02DA-4F2D-BE3F-12AC33F70381}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C364C24F-A4D0-4D47-81B5-BA1C48D22E9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C364C24F-A4D0-4D47-81B5-BA1C48D22E9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C364C24F-A4D0-4D47-81B5-BA1C48D22E9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,6 +87,18 @@ Global
 		{B7B4F1C5-FA5F-4AC3-B1D2-19826B1FABE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B7B4F1C5-FA5F-4AC3-B1D2-19826B1FABE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B7B4F1C5-FA5F-4AC3-B1D2-19826B1FABE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34949103-DCE1-4923-8EA2-FC66B3689254}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34949103-DCE1-4923-8EA2-FC66B3689254}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34949103-DCE1-4923-8EA2-FC66B3689254}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34949103-DCE1-4923-8EA2-FC66B3689254}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0BDF8F28-DF41-4AF0-8DC6-CCCBADE240E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0BDF8F28-DF41-4AF0-8DC6-CCCBADE240E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0BDF8F28-DF41-4AF0-8DC6-CCCBADE240E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0BDF8F28-DF41-4AF0-8DC6-CCCBADE240E1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B66BDA2C-FE2A-4C87-8254-B51749FEAA58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B66BDA2C-FE2A-4C87-8254-B51749FEAA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B66BDA2C-FE2A-4C87-8254-B51749FEAA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B66BDA2C-FE2A-4C87-8254-B51749FEAA58}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

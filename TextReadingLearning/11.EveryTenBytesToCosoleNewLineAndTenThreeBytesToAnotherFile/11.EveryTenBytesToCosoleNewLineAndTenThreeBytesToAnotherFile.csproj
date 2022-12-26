@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine.csproj" />
+    <ProjectReference Include="..\9.ThreeBytesToAnotherFile\9.ThreeBytesToAnotherFile.csproj" />
   </ItemGroup>
 
 </Project>

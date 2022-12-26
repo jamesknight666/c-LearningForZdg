@@ -10,17 +10,25 @@ namespace _8.ThreeBytesToConsoleNewLine
 {
     public class Program8
     {
-        public static void ThreeBytesToConsoleNewLine(string ReadPath,int jinzhi)
+        public static void ThreeBytesToConsoleNewLine(string ReadPath, int jinzhi)
         {
             using (FileStream fs = new FileStream(ReadPath, FileMode.OpenOrCreate, FileAccess.Read))
             {
-                int r=0;
-                while ((r=fs.ReadByte())!=-1)
+                int r = 0;
+                while ((r = fs.ReadByte()) != -1)
                 {
-                    string s = Convert.ToString(r, jinzhi);
-                    if (r==0x31||r==0x32||r==0x33)
-                        Console.Write('\n');                        
-                    Console.Write(s+" ");
+                    string s;
+                    if (r != 0x31)
+                        Console.Write(Convert.ToString(r, jinzhi) + " ");
+                    else if ((r = fs.ReadByte()) != 0x32)
+                        Console.Write(Convert.ToString(0x31, jinzhi) + " " + Convert.ToString(r, jinzhi) + " ");
+                    else if ((r = fs.ReadByte()) != 0x33)
+                        Console.Write(Convert.ToString(0x31, jinzhi) + " " + Convert.ToString(0x32, jinzhi) + " " + Convert.ToString(r, jinzhi) + " ");
+                    else 
+                    {
+                        Console.Write('\n');
+                        Console.Write(Convert.ToString(0x31, jinzhi) + " " + Convert.ToString(0x32, jinzhi) + " " + Convert.ToString(0x33, jinzhi) + " ");
+                    }
                 }
             }
         }

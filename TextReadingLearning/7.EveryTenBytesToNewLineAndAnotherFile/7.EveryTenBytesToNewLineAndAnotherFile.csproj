@@ -9,8 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\5.EveryTenBytesToConsoleNewLine\5.EveryTenBytesToConsoleNewLine.csproj" />
-    <ProjectReference Include="..\6.EveryTenBytesToAnotherFile\6.EveryTenBytesToAnotherFile.csproj" />
+    <ProjectReference Include="..\StreamingForAll\StreamingForAll.csproj" />
   </ItemGroup>
 
 </Project>

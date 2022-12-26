@@ -4,7 +4,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Threading.Tasks.Dataflow;
 using System.Runtime.CompilerServices;
+using StreamingForAll;
 
 namespace _1.TextToConsole
 {
@@ -12,14 +14,16 @@ namespace _1.TextToConsole
     {
         static void Main()
         {
-            string line = "";
-            using (StreamReader sr = new StreamReader("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test2.txt"))
+            //确定读入路径
+            FileReadStringBlock FRSB = new FileReadStringBlock("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test2.txt");
+            ConsoleWriteStringBlock CWSB = new ConsoleWriteStringBlock();
+            //加入方法
+            FRSB.DataArrived += (e) =>
             {
-                while ((line = sr.ReadLine()) != null)
-                {
-                    Console.WriteLine(line);
-                }
-            }
+                CWSB.Enqueue(e);
+            };
+            //开始流程
+            FRSB.Start();
             Console.ReadKey();
         }
     }

@@ -5,11 +5,24 @@
       "6.EveryTenBytesToAnotherFile/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "StreamingForAll": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/6.EveryTenBytesToAnotherFile.dll": {}
         },
         "runtime": {
           "bin/placeholder/6.EveryTenBytesToAnotherFile.dll": {}
+        }
+      },
+      "StreamingForAll/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/StreamingForAll.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StreamingForAll.dll": {}
         }
       }
     }
@@ -19,6 +32,11 @@
       "type": "project",
       "path": "../6.EveryTenBytesToAnotherFile/6.EveryTenBytesToAnotherFile.csproj",
       "msbuildProject": "../6.EveryTenBytesToAnotherFile/6.EveryTenBytesToAnotherFile.csproj"
+    },
+    "StreamingForAll/1.0.0": {
+      "type": "project",
+      "path": "../StreamingForAll/StreamingForAll.csproj",
+      "msbuildProject": "../StreamingForAll/StreamingForAll.csproj"
     }
   },
   "projectFileDependencyGroups": {

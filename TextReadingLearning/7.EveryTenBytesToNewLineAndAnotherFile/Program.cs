@@ -4,8 +4,8 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using _5.EveryTenBytesToConsoleNewLine;
-using _6.EveryTenBytesToAnotherFile;
+using System.Threading.Tasks.Dataflow;
+using StreamingForAll;
 
 namespace _7.EveryTenBytesToConsoleNewLineAndAnotherFile
 {
@@ -13,10 +13,17 @@ namespace _7.EveryTenBytesToConsoleNewLineAndAnotherFile
     {
         static void Main()
         {
-            string ReadPath = "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\test1.txt";
-            string WritePath = "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg";
-            Program6.EveryTenBytesToAnotherFile(ReadPath, WritePath, 7, 2);
-            Program5.EveryTenBytesToConsoleNewLine(ReadPath,2);
+            int i = 0;
+            FileReadByteBlock FRBB = new FileReadByteBlock("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test1.txt", 10);
+            ConsoleWriteByteBlock CWBB = new ConsoleWriteByteBlock(16, "huanhang");
+            FRBB.DataArrived += (e) =>
+            {
+                CWBB.Enqueue(e);
+                FileWriteByteBlock FWBB = new FileWriteByteBlock("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\7." + ++i + ".txt", 16);
+                FWBB.Enqueue(e);
+            };
+            FRBB.Start();
+            Console.ReadKey();
         }
     }
 }

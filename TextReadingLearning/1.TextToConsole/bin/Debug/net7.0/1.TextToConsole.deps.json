@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "1.TextToConsole/1.0.0": {
+        "dependencies": {
+          "StreamingForAll": "1.0.0"
+        },
         "runtime": {
           "1.TextToConsole.dll": {}
+        }
+      },
+      "StreamingForAll/1.0.0": {
+        "runtime": {
+          "StreamingForAll.dll": {}
         }
       }
     }
   },
   "libraries": {
     "1.TextToConsole/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "StreamingForAll/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

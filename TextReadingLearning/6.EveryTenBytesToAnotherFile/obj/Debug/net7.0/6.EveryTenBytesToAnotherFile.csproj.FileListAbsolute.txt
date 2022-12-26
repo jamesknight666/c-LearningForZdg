@@ -13,3 +13,9 @@ C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBy
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\6.EveryTenBytesToAnotherFile.pdb
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\6.EveryTenBytesToAnotherFile.genruntimeconfig.cache
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\ref\6.EveryTenBytesToAnotherFile.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\bin\Debug\net7.0\StreamingForAll.deps.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\bin\Debug\net7.0\StreamingForAll.runtimeconfig.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\bin\Debug\net7.0\StreamingForAll.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\bin\Debug\net7.0\StreamingForAll.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\bin\Debug\net7.0\StreamingForAll.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\6.EveryTenBytesToAnotherFile\obj\Debug\net7.0\6.EveryTenBytesToAnotherFile.csproj.CopyComplete

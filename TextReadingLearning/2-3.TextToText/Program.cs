@@ -4,23 +4,21 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using StreamingForAll;
 
-namespace _23.TextToText
+namespace _2.TextToText
 {
-    class Program23
+    class Program2
     {
         static void Main()
         {
-            StreamReader sr = new StreamReader("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test1.txt");
-            StreamWriter sw = new StreamWriter("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\TextToText.txt");
-            string line;
-            while ((line = sr.ReadLine()) != null)
+            FileReadBlock<char> FRB = new FileReadBlock<char>("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test2.txt");
+            ConsoleWriteBlock<char> CWB = new ConsoleWriteBlock<char>();
+            FRB.DataArrived += (e) =>
             {
-                sw.WriteLine(line);
-                Console.WriteLine(line);
-            }
-            sw.Flush();
-            sw.Close();
+                CWB.Enqueue(e);
+            };
+            FRB.Start();
             Console.ReadKey();
         }
     }

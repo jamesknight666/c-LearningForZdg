@@ -1,0 +1,15 @@
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\obj\Debug\net7.0\StreamingForAll.csproj.AssemblyReference.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\obj\Debug\net7.0\StreamingForAll.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\obj\Debug\net7.0\StreamingForAll.AssemblyInfoInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\obj\Debug\net7.0\StreamingForAll.AssemblyInfo.cs
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\obj\Debug\net7.0\StreamingForAll.csproj.CoreCompileInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\bin\Debug\net7.0\StreamingForAll.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\bin\Debug\net7.0\StreamingForAll.deps.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\bin\Debug\net7.0\StreamingForAll.runtimeconfig.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\bin\Debug\net7.0\StreamingForAll.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\bin\Debug\net7.0\StreamingForAll.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\obj\Debug\net7.0\StreamingForAll.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\obj\Debug\net7.0\refint\StreamingForAll.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\obj\Debug\net7.0\StreamingForAll.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\obj\Debug\net7.0\StreamingForAll.genruntimeconfig.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\StreamingForAll\obj\Debug\net7.0\ref\StreamingForAll.dll

@@ -13,3 +13,9 @@ C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\5.EveryTenBy
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\5.EveryTenBytesToConsoleNewLine\obj\Debug\net7.0\5.EveryTenBytesToConsoleNewLine.pdb
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\5.EveryTenBytesToConsoleNewLine\obj\Debug\net7.0\5.EveryTenBytesToConsoleNewLine.genruntimeconfig.cache
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\5.EveryTenBytesToConsoleNewLine\obj\Debug\net7.0\ref\5.EveryTenBytesToConsoleNewLine.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\5.EveryTenBytesToConsoleNewLine\bin\Debug\net7.0\StreamingForAll.deps.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\5.EveryTenBytesToConsoleNewLine\bin\Debug\net7.0\StreamingForAll.runtimeconfig.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\5.EveryTenBytesToConsoleNewLine\bin\Debug\net7.0\StreamingForAll.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\5.EveryTenBytesToConsoleNewLine\bin\Debug\net7.0\StreamingForAll.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\5.EveryTenBytesToConsoleNewLine\bin\Debug\net7.0\StreamingForAll.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\5.EveryTenBytesToConsoleNewLine\obj\Debug\net7.0\5.EveryTenBytesToConsoleNewLine.csproj.CopyComplete

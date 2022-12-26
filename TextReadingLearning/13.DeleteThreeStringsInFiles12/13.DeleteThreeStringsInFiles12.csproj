@@ -8,4 +8,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\12.EveryTenBytesPlusThreeStringsToAnotherFile\12.EveryTenBytesPlusThreeStringsToAnotherFile.csproj" />
+  </ItemGroup>
+
 </Project>

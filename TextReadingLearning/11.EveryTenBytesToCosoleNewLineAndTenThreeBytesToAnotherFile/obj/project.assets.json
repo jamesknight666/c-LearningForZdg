@@ -5,11 +5,34 @@
       "5.EveryTenBytesToConsoleNewLine/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "StreamingForAll": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/5.EveryTenBytesToConsoleNewLine.dll": {}
         },
         "runtime": {
           "bin/placeholder/5.EveryTenBytesToConsoleNewLine.dll": {}
+        }
+      },
+      "9.ThreeBytesToAnotherFile/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/9.ThreeBytesToAnotherFile.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/9.ThreeBytesToAnotherFile.dll": {}
+        }
+      },
+      "StreamingForAll/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/StreamingForAll.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StreamingForAll.dll": {}
         }
       }
     }
@@ -19,11 +42,22 @@
       "type": "project",
       "path": "../5.EveryTenBytesToConsoleNewLine/5.EveryTenBytesToConsoleNewLine.csproj",
       "msbuildProject": "../5.EveryTenBytesToConsoleNewLine/5.EveryTenBytesToConsoleNewLine.csproj"
+    },
+    "9.ThreeBytesToAnotherFile/1.0.0": {
+      "type": "project",
+      "path": "../9.ThreeBytesToAnotherFile/9.ThreeBytesToAnotherFile.csproj",
+      "msbuildProject": "../9.ThreeBytesToAnotherFile/9.ThreeBytesToAnotherFile.csproj"
+    },
+    "StreamingForAll/1.0.0": {
+      "type": "project",
+      "path": "../StreamingForAll/StreamingForAll.csproj",
+      "msbuildProject": "../StreamingForAll/StreamingForAll.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "5.EveryTenBytesToConsoleNewLine >= 1.0.0"
+      "5.EveryTenBytesToConsoleNewLine >= 1.0.0",
+      "9.ThreeBytesToAnotherFile >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -59,6 +93,9 @@
           "projectReferences": {
             "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\TextReadingLearning\\5.EveryTenBytesToConsoleNewLine\\5.EveryTenBytesToConsoleNewLine.csproj": {
               "projectPath": "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\TextReadingLearning\\5.EveryTenBytesToConsoleNewLine\\5.EveryTenBytesToConsoleNewLine.csproj"
+            },
+            "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\TextReadingLearning\\9.ThreeBytesToAnotherFile\\9.ThreeBytesToAnotherFile.csproj": {
+              "projectPath": "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\TextReadingLearning\\9.ThreeBytesToAnotherFile\\9.ThreeBytesToAnotherFile.csproj"
             }
           }
         }

@@ -13,3 +13,9 @@ C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToCons
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\1.TextToConsole.pdb
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\1.TextToConsole.genruntimeconfig.cache
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\ref\1.TextToConsole.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\bin\Debug\net7.0\StreamingForAll.deps.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\bin\Debug\net7.0\StreamingForAll.runtimeconfig.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\bin\Debug\net7.0\StreamingForAll.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\bin\Debug\net7.0\StreamingForAll.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\bin\Debug\net7.0\StreamingForAll.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\1.TextToConsole\obj\Debug\net7.0\1.TextToConsole.csproj.CopyComplete
