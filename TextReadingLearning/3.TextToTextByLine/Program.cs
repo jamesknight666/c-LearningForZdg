@@ -15,14 +15,16 @@ namespace _3.TextToTextByLine
         static void Main()
         {
             int i = 0;
-            FileReadStringBlock FRSB = new FileReadStringBlock("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test1.txt");
+            FileReadStringBlock FRSB = new FileReadStringBlock("..\\..\\..\\..\\..\\Test1.txt");
+            FileWriteStringBlock FWSB = new FileWriteStringBlock("..\\..\\..\\..\\..\\3.", 0,1);
             FRSB.DataArrived += (e) =>
             {
-                FileWriteStringBlock FWSB = new FileWriteStringBlock("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\2."+ ++i +".txt");
                 FWSB.Enqueue(e);
             };
             FRSB.Start();
-            Console.ReadKey();
+            FWSB.InputBlock.Complete();
+            FWSB.InputBlock.Completion.Wait();
+            //Console.ReadKey();
         }
     }
 }

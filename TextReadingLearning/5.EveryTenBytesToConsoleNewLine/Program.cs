@@ -13,14 +13,16 @@ namespace _5.EveryTenBytesToConsoleNewLine
     {
         static void Main(string[] args)
         {
-            FileReadByteBlock FRBB = new FileReadByteBlock("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test1.txt", 10);
+            FileReadByteBlock FRBB = new FileReadByteBlock("..\\..\\..\\..\\..\\Test1.txt", 10);
             ConsoleWriteByteBlock CWBB = new ConsoleWriteByteBlock(16,"huanhang");
             FRBB.DataArrived += (e) =>
             {
                 CWBB.Enqueue(e);
             };
             FRBB.Start();
-            Console.ReadKey();
+            CWBB.InputBlock.Complete();
+            CWBB.InputBlock.Completion.Wait();
+            //Console.ReadKey();
         }
     }
 }

@@ -1,4 +1,6 @@
 ﻿using StreamingForAll;
+using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography.X509Certificates;
 using System.Threading.Tasks.Dataflow;
 namespace StreamingForAll
 {
@@ -110,20 +112,31 @@ namespace StreamingForAll
     public class FileWriteStringBlock
     {
         public ActionBlock<string> InputBlock;
-        public List<string> PathList=new List<string>();
+        public int i = 0;
 
-        public FileWriteStringBlock(string path)
+        public FileWriteStringBlock(string path, int count,int flag)
         {
             InputBlock = new ActionBlock<string>(p =>
             {
-                //老问题，ActionBlock操作太慢，输入容易被新输入覆盖，没办法，File.AppendAllText比StreamWriter操作快一点
-                //using (StreamWriter sw = new StreamWriter(path))
-                //{
-                //    sw.Write(p);
-                //    Console.Write(p);
-                //}
-                File.AppendAllText(path, p + '\n');
-                PathList.Add(path);
+                if(count==1)
+                {
+                    File.AppendAllText(path, p + '\n');
+                    if(flag==1)
+                        Console.WriteLine("已写入文件" + path);
+                }
+                else if (count == 0)
+                {
+                    StreamWriter sw = new StreamWriter(path+ ++i +".txt");
+                    sw.WriteLine(p);
+                    sw.Flush();
+                    if (flag == 1)
+                        Console.WriteLine("已写入文件" + path + i + ".txt");
+                }
+                if (InputBlock.InputCount == 0)
+                {
+                    if (flag == 1)
+                        Console.WriteLine("已全部写入文件");
+                }
             });
         }
         public void Enqueue(string input)
@@ -140,6 +153,8 @@ namespace StreamingForAll
             InputBlock = new ActionBlock<string>(p =>
             {
                 Console.WriteLine(p);
+                if (InputBlock.InputCount == 0)
+                    Console.WriteLine("已全部写完");
             });
         }
         public void Enqueue(string input)
@@ -169,7 +184,6 @@ namespace StreamingForAll
                     if (r == 0)
                         break;
                     DataArrived(by);
-                    Thread.Sleep(1 * num);//这里必须要挂起，后面操作不够快的话，前面的输入会不断被新输入覆盖，暂时没有好的解决办法。
                 }
             }
         }
@@ -178,23 +192,38 @@ namespace StreamingForAll
     public class FileWriteByteBlock
     {
         public ActionBlock<byte[]> InputBlock;
-        public List<string> PathList = new List<string>();
-        public FileWriteByteBlock(string path, int jinzhi)
+        public int i = 0;
+        public FileWriteByteBlock(string path, int jinzhi,int count,int flag)
         {
             InputBlock = new ActionBlock<byte[]>(p =>
             {
-                //老问题，ActionBlock操作太慢，输入容易被新输入覆盖，没办法，File.AppendAllText比StreamWriter操作快一点
-                //using (StreamWriter sw = new StreamWriter(path))
-                //{
-                //    sw.Write(p);
-                //    Console.Write(p);
-                //}
-                foreach (byte b in p)
+                if (count == 1)
                 {
-                    if(b!=0)
-                       File.AppendAllText(path, Convert.ToString(b, jinzhi) + '\n');
+                    foreach (byte b in p)
+                    {
+                        if (b != 0)
+                            File.AppendAllText(path, Convert.ToString(b, jinzhi) + '\n');;
+                    }
+                    if (flag == 1)
+                        Console.WriteLine("已写入文件" + path);
                 }
-                PathList.Add(path);
+                else if (count == 0)
+                {
+                    StreamWriter sw = new StreamWriter(path + ++i + ".txt");
+                    foreach (byte b in p)
+                    {
+                        if (b != 0)
+                            sw.WriteLine(Convert.ToString(b, jinzhi));
+                    }
+                    sw.Flush();
+                    if (flag == 1)
+                        Console.WriteLine("已写入文件" + path + i + ".txt");
+                }
+                if (InputBlock.InputCount == 0)
+                {
+                    if (flag == 1)
+                        Console.WriteLine("已全部写入文件");
+                }
             });
         }
         public void Enqueue(byte[] input)
@@ -217,6 +246,8 @@ namespace StreamingForAll
                 }
                 if (str == "huanhang")
                     Console.Write('\n');
+                if(InputBlock.InputCount == 0)
+                    Console.WriteLine("已全部写完");
             });
         }
         public void Enqueue(byte[] input)
@@ -224,6 +255,133 @@ namespace StreamingForAll
             InputBlock.Post(input);
         }
     }
+
+    public class CutForBytesBlock
+    {
+        public ActionBlock<byte[]> InputBlock;
+        public List<byte> NextInputList = new List<byte>();
+        public List<byte> huanchong = new List<byte>();
+        public Action<byte[]> DataArrived;
+        public  void xieru()
+        {
+            foreach(byte b in huanchong)
+                NextInputList.Add(b);
+        }
+        public CutForBytesBlock(byte[] bytes)
+        {
+            int flag = 0;
+            int geshu=bytes.Length;
+            InputBlock = new ActionBlock<byte[]>(p =>
+            {
+                byte b = p[0];
+                int count=0;
+                for(int i=0;i<geshu;i++)
+                {
+                    if (b == bytes[i])
+                    {
+                        if (flag == i)
+                        {
+                            huanchong.Add(b);
+                            flag++;
+                        }
+                        else
+                        {
+                            if (b == bytes[0])
+                            {
+                                flag = 1;
+                                xieru();
+                                huanchong.Clear();
+                                huanchong.Add(b);
+                            }
+                            flag = 0;
+                            huanchong.Add(b);
+                            xieru();
+                            huanchong.Clear();
+                        }
+                    }
+                    else
+                        count++;
+                }
+                if(count==geshu)
+                {
+                    huanchong.Add(b);
+                    xieru();
+                    huanchong.Clear();
+                    flag = 0;
+                }
+                if (flag==geshu|| InputBlock.InputCount==0)
+                {
+                    DataArrived(NextInputList.ToArray());
+                    NextInputList.Clear();
+                    flag = 0;
+                    xieru();
+                    huanchong.Clear();
+                }
+            });
+        }
+        public void Enqueue(byte[] input)
+        {
+            InputBlock.Post(input);
+        }
+    }
+
+    public class CutMostNumBytesBlock
+    {
+        public ActionBlock<byte[]> InputBlock;
+        public List<byte> NextInputList = new List<byte>();
+        public Action<byte[]> DataArrived;
+        public CutMostNumBytesBlock(int Num)
+        {
+            InputBlock = new ActionBlock<byte[]>(p =>
+            {
+                int count=0;
+                for(int i=0;i<p.Length;i++)
+                {
+                    count++;
+                    NextInputList.Add(p[i]);
+                    if((i+1)%Num==0)
+                    {
+                        DataArrived(NextInputList.ToArray());
+                        NextInputList.Clear();
+                    }
+                }
+                if(count%Num!=0)
+                {
+                    DataArrived(NextInputList.ToArray());
+                    NextInputList.Clear();
+                }
+            });
+        }
+        public void Enqueue(byte[] input)
+        {
+            InputBlock.Post(input);
+        }
+    }
+
+    public class AddBytesForHead
+    {
+        public ActionBlock<byte[]> InputBlock;
+        public List<byte> NextInputList = new List<byte>();
+        public Action<byte[]> DataArrived;
+        public AddBytesForHead(byte[] by)
+        {
+            InputBlock = new ActionBlock<byte[]>(p =>
+            {
+                foreach (byte b in by)
+                    NextInputList.Add(b);
+                foreach(byte b in p)
+                    NextInputList.Add(b);
+                DataArrived(NextInputList.ToArray());
+                NextInputList.Clear();
+            });
+        }
+        public void Enqueue(byte[] input)
+        {
+            InputBlock.Post(input);
+        }
+    }
+
+
 
     class useless
     {

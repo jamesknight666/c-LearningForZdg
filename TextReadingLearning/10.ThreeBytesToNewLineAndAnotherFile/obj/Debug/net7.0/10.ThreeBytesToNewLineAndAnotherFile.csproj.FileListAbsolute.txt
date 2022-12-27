@@ -1,18 +1,8 @@
-C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\8.ThreeBytesToConsoleNewLine.deps.json
-C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\8.ThreeBytesToConsoleNewLine.runtimeconfig.json
-C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\8.ThreeBytesToConsoleNewLine.exe
-C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\9.ThreeBytesToAnotherFile.deps.json
-C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\9.ThreeBytesToAnotherFile.runtimeconfig.json
-C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\9.ThreeBytesToAnotherFile.exe
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\10.ThreeBytesToNewLineAndAnotherFile.exe
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\10.ThreeBytesToNewLineAndAnotherFile.deps.json
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\10.ThreeBytesToNewLineAndAnotherFile.runtimeconfig.json
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\10.ThreeBytesToNewLineAndAnotherFile.dll
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\10.ThreeBytesToNewLineAndAnotherFile.pdb
-C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\8.ThreeBytesToConsoleNewLine.dll
-C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\9.ThreeBytesToAnotherFile.dll
-C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\8.ThreeBytesToConsoleNewLine.pdb
-C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\9.ThreeBytesToAnotherFile.pdb
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\obj\Debug\net7.0\10.ThreeBytesToNewLineAndAnotherFile.csproj.AssemblyReference.cache
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\obj\Debug\net7.0\10.ThreeBytesToNewLineAndAnotherFile.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\obj\Debug\net7.0\10.ThreeBytesToNewLineAndAnotherFile.AssemblyInfoInputs.cache
@@ -24,3 +14,8 @@ C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeByte
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\obj\Debug\net7.0\10.ThreeBytesToNewLineAndAnotherFile.pdb
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\obj\Debug\net7.0\10.ThreeBytesToNewLineAndAnotherFile.genruntimeconfig.cache
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\obj\Debug\net7.0\ref\10.ThreeBytesToNewLineAndAnotherFile.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\StreamingForAll.deps.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\StreamingForAll.runtimeconfig.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\StreamingForAll.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\StreamingForAll.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\10.ThreeBytesToNewLineAndAnotherFile\bin\Debug\net7.0\StreamingForAll.pdb

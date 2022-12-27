@@ -15,7 +15,7 @@ namespace _4.ByteToConsole
         static void Main(string[] args)
         {
             //确定读入路径和每次读入byte个数
-            FileReadByteBlock FRBB = new FileReadByteBlock("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test1.txt",10);
+            FileReadByteBlock FRBB = new FileReadByteBlock("..\\..\\..\\..\\..\\Test1.txt", 10);
             //确定要几进制输出
             ConsoleWriteByteBlock CWBB = new ConsoleWriteByteBlock(16);
             FRBB.DataArrived += (e) =>
@@ -23,7 +23,9 @@ namespace _4.ByteToConsole
                 CWBB.Enqueue(e);
             };
             FRBB.Start();
-            Console.ReadKey();
+            CWBB.InputBlock.Complete();
+            CWBB.InputBlock.Completion.Wait();
+            //Console.ReadKey();
         }
     }
 }

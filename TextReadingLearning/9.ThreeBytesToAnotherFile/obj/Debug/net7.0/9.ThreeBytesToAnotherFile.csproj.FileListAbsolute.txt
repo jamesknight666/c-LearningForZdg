@@ -13,3 +13,9 @@ C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytes
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\9.ThreeBytesToAnotherFile.pdb
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\9.ThreeBytesToAnotherFile.genruntimeconfig.cache
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\ref\9.ThreeBytesToAnotherFile.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\bin\Debug\net7.0\StreamingForAll.deps.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\bin\Debug\net7.0\StreamingForAll.runtimeconfig.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\bin\Debug\net7.0\StreamingForAll.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\bin\Debug\net7.0\StreamingForAll.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\bin\Debug\net7.0\StreamingForAll.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\TextReadingLearning\9.ThreeBytesToAnotherFile\obj\Debug\net7.0\9.ThreeBytesToAnotherFile.csproj.CopyComplete

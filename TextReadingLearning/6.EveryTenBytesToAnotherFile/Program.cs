@@ -14,14 +14,17 @@ namespace _6.EveryTenBytesToAnotherFile
         static void Main()
         {
             int i = 0;
-            FileReadByteBlock FRBB = new FileReadByteBlock("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test1.txt",10);
+            FileReadByteBlock FRBB = new FileReadByteBlock("..\\..\\..\\..\\..\\Test1.txt", 10);
+            //（path，进制，写入一个文件还是不同文件）
+            FileWriteByteBlock FWBB = new FileWriteByteBlock("..\\..\\..\\..\\..\\6.", 16,0,1);
             FRBB.DataArrived += (e) =>
             {
-                FileWriteByteBlock FWBB = new FileWriteByteBlock("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\6." + ++i + ".txt",16);
                 FWBB.Enqueue(e);
             };
             FRBB.Start();
-            Console.ReadKey();
+            FWBB.InputBlock.Complete();
+            FWBB.InputBlock.Completion.Wait();
+            //Console.ReadKey();
         }
     }
 }

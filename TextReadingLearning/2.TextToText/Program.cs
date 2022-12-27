@@ -14,14 +14,17 @@ namespace _2.TextToText
     {
         static void Main()
         {
-            FileReadStringBlock FRSB = new FileReadStringBlock("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test2.txt");
-            FileWriteStringBlock FWSB = new FileWriteStringBlock("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\TextToText.txt");
+            FileReadStringBlock FRSB = new FileReadStringBlock("..\\..\\..\\..\\..\\Test1.txt");
+            //路径+输入1：所有流写入一个文件。输入0；不同流写入不同文件+输入1；显示写入进度。输入0；不显示
+            FileWriteStringBlock FWSB = new FileWriteStringBlock("..\\..\\..\\..\\..\\TextToText.txt",1,1);
             FRSB.DataArrived += (e) =>
             {
                 FWSB.Enqueue(e);
             };
             FRSB.Start();
-            Console.ReadKey();
+            FWSB.InputBlock.Complete();
+            FWSB.InputBlock.Completion.Wait();
+            //Console.ReadKey();
         }
     }
 }

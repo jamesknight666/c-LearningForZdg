@@ -15,7 +15,7 @@ namespace _1.TextToConsole
         static void Main()
         {
             //确定读入路径
-            FileReadStringBlock FRSB = new FileReadStringBlock("C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\Test2.txt");
+            FileReadStringBlock FRSB = new FileReadStringBlock("..\\..\\..\\..\\..\\Test1.txt");
             ConsoleWriteStringBlock CWSB = new ConsoleWriteStringBlock();
             //加入方法
             FRSB.DataArrived += (e) =>
@@ -24,7 +24,9 @@ namespace _1.TextToConsole
             };
             //开始流程
             FRSB.Start();
-            Console.ReadKey();
+            CWSB.InputBlock.Complete();
+            CWSB.InputBlock.Completion.Wait();
+            //Console.ReadKey();
         }
     }
 }
