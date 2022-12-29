@@ -14,7 +14,8 @@ namespace _10.ThreeBytesToNewLineAndAnotherFile
         static void Main()
         {
             byte[] by = { 0x31, 0x32, 0x33 };
-            FileReadByteBlock FRBB = new FileReadByteBlock("..\\..\\..\\..\\..\\Test1.txt", 1);
+            string[] paths = { "..\\..\\..\\..\\..\\Test1.txt" };
+            FileReadByteBlock FRBB = new FileReadByteBlock(paths, 1);
             CutForBytesBlock CFBB = new CutForBytesBlock(by);
             ConsoleWriteByteBlock CWBB = new ConsoleWriteByteBlock(16, "huanhang");
             FileWriteByteBlock FWBB = new FileWriteByteBlock("..\\..\\..\\..\\..\\10.", 16, 0, 0);

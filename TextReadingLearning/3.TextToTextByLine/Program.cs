@@ -15,7 +15,8 @@ namespace _3.TextToTextByLine
         static void Main()
         {
             int i = 0;
-            FileReadStringBlock FRSB = new FileReadStringBlock("..\\..\\..\\..\\..\\Test1.txt");
+            string[] paths = { "..\\..\\..\\..\\..\\Test1.txt" };
+            FileReadStringBlock FRSB = new FileReadStringBlock(paths);
             FileWriteStringBlock FWSB = new FileWriteStringBlock("..\\..\\..\\..\\..\\3.", 0,1);
             FRSB.DataArrived += (e) =>
             {

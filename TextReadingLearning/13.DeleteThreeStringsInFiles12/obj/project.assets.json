@@ -2,32 +2,6 @@
   "version": 3,
   "targets": {
     "net7.0": {
-      "12.EveryTenBytesPlusThreeStringsToAnotherFile/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "6.EveryTenBytesToAnotherFile": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/12.EveryTenBytesPlusThreeStringsToAnotherFile.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/12.EveryTenBytesPlusThreeStringsToAnotherFile.dll": {}
-        }
-      },
-      "6.EveryTenBytesToAnotherFile/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "StreamingForAll": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/6.EveryTenBytesToAnotherFile.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/6.EveryTenBytesToAnotherFile.dll": {}
-        }
-      },
       "StreamingForAll/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -41,16 +15,6 @@
     }
   },
   "libraries": {
-    "12.EveryTenBytesPlusThreeStringsToAnotherFile/1.0.0": {
-      "type": "project",
-      "path": "../12.EveryTenBytesPlusThreeStringsToAnotherFile/12.EveryTenBytesPlusThreeStringsToAnotherFile.csproj",
-      "msbuildProject": "../12.EveryTenBytesPlusThreeStringsToAnotherFile/12.EveryTenBytesPlusThreeStringsToAnotherFile.csproj"
-    },
-    "6.EveryTenBytesToAnotherFile/1.0.0": {
-      "type": "project",
-      "path": "../6.EveryTenBytesToAnotherFile/6.EveryTenBytesToAnotherFile.csproj",
-      "msbuildProject": "../6.EveryTenBytesToAnotherFile/6.EveryTenBytesToAnotherFile.csproj"
-    },
     "StreamingForAll/1.0.0": {
       "type": "project",
       "path": "../StreamingForAll/StreamingForAll.csproj",
@@ -59,7 +23,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "12.EveryTenBytesPlusThreeStringsToAnotherFile >= 1.0.0"
+      "StreamingForAll >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -93,8 +57,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\TextReadingLearning\\12.EveryTenBytesPlusThreeStringsToAnotherFile\\12.EveryTenBytesPlusThreeStringsToAnotherFile.csproj": {
-              "projectPath": "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\TextReadingLearning\\12.EveryTenBytesPlusThreeStringsToAnotherFile\\12.EveryTenBytesPlusThreeStringsToAnotherFile.csproj"
+            "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\TextReadingLearning\\StreamingForAll\\StreamingForAll.csproj": {
+              "projectPath": "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\TextReadingLearning\\StreamingForAll\\StreamingForAll.csproj"
             }
           }
         }

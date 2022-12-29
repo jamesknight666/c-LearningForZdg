@@ -14,7 +14,8 @@ namespace _7.EveryTenBytesToConsoleNewLineAndAnotherFile
         static void Main()
         {
             int i = 0;
-            FileReadByteBlock FRBB = new FileReadByteBlock("..\\..\\..\\..\\..\\Test1.txt", 10);
+            string[] paths = { "..\\..\\..\\..\\..\\Test1.txt" };
+            FileReadByteBlock FRBB = new FileReadByteBlock(paths, 10);
             ConsoleWriteByteBlock CWBB = new ConsoleWriteByteBlock(16, "huanhang");
             //因为命令行也要显示输出，所以就不显示输出文件的进度了。
             FileWriteByteBlock FWBB = new FileWriteByteBlock("..\\..\\..\\..\\..\\7.", 16,0,0);

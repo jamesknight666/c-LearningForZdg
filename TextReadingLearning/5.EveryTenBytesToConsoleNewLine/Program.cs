@@ -13,7 +13,8 @@ namespace _5.EveryTenBytesToConsoleNewLine
     {
         static void Main(string[] args)
         {
-            FileReadByteBlock FRBB = new FileReadByteBlock("..\\..\\..\\..\\..\\Test1.txt", 10);
+            string[] paths = { "..\\..\\..\\..\\..\\Test1.txt" };
+            FileReadByteBlock FRBB = new FileReadByteBlock(paths, 10);
             ConsoleWriteByteBlock CWBB = new ConsoleWriteByteBlock(16,"huanhang");
             FRBB.DataArrived += (e) =>
             {

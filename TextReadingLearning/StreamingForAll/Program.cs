@@ -90,22 +90,50 @@ namespace StreamingForAll
 
     public class FileReadStringBlock
     {
+        public string[] paths;
+        public Action<string> DataArrived;
+        public Action<string[]> DataArrived1;
+        public FileReadStringBlock(string[] paths)
+        {
+            this.paths = paths;
+        }
+        public void Start()
+        {
+            foreach(string path in paths)
+            {
+                List<string> NextInputList = new List<string>();
+                using (StreamReader sr = new StreamReader(path))
+                {
+                    string s;
+                    while ((s = sr.ReadLine()) != null)
+                    {
+                        NextInputList.Add(s);
+                        DataArrived(s);
+                    }
+                    DataArrived1(NextInputList.ToArray());
+                }
+            }
+        }
+    }
+
+    public class FileReadStringBlock1
+    {
         public string path;
         public Action<string> DataArrived;
-        public FileReadStringBlock(string path)
+        public FileReadStringBlock1(string path)
         {
             this.path = path;
         }
         public void Start()
         {
             string s;
-            using (StreamReader sr = new StreamReader(path))
-            {
-                while ((s = sr.ReadLine()) != null)
+                using (StreamReader sr = new StreamReader(path))
                 {
-                    DataArrived(s);
+                    while ((s = sr.ReadLine()) != null)
+                    {
+                        DataArrived(s);
+                    }
                 }
-            }
         }
     }
 
@@ -114,19 +142,19 @@ namespace StreamingForAll
         public ActionBlock<string> InputBlock;
         public int i = 0;
 
-        public FileWriteStringBlock(string path, int count,int flag)
+        public FileWriteStringBlock(string path, int count, int flag)
         {
             InputBlock = new ActionBlock<string>(p =>
             {
-                if(count==1)
+                if (count == 1)
                 {
                     File.AppendAllText(path, p + '\n');
-                    if(flag==1)
+                    if (flag == 1)
                         Console.WriteLine("已写入文件" + path);
                 }
                 else if (count == 0)
                 {
-                    StreamWriter sw = new StreamWriter(path+ ++i +".txt");
+                    StreamWriter sw = new StreamWriter(path + ++i + ".txt");
                     sw.WriteLine(p);
                     sw.Flush();
                     if (flag == 1)
@@ -165,25 +193,28 @@ namespace StreamingForAll
 
     public class FileReadByteBlock
     {
-        public string path;
+        public string[] paths;
         public int num;
         public Action<byte[]> DataArrived;
-        public FileReadByteBlock(string path, int num)
+        public FileReadByteBlock(string[] paths, int num)
         {
-            this.path = path;
+            this.paths = paths;
             this.num = num;
         }
         public void Start()
         {
-            using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read))
+            foreach(string path in paths)
             {
-                while (true)
+                using (FileStream fs = new FileStream(path, FileMode.OpenOrCreate, FileAccess.Read))
                 {
-                    byte[] by = new byte[num];
-                    int r = fs.Read(by, 0, by.Length);
-                    if (r == 0)
-                        break;
-                    DataArrived(by);
+                    while (true)
+                    {
+                        byte[] by = new byte[num];
+                        int r = fs.Read(by, 0, by.Length);
+                        if (r == 0)
+                            break;
+                        DataArrived(by);
+                    }
                 }
             }
         }
@@ -193,7 +224,7 @@ namespace StreamingForAll
     {
         public ActionBlock<byte[]> InputBlock;
         public int i = 0;
-        public FileWriteByteBlock(string path, int jinzhi,int count,int flag)
+        public FileWriteByteBlock(string path, int jinzhi, int count, int flag)
         {
             InputBlock = new ActionBlock<byte[]>(p =>
             {
@@ -202,7 +233,7 @@ namespace StreamingForAll
                     foreach (byte b in p)
                     {
                         if (b != 0)
-                            File.AppendAllText(path, Convert.ToString(b, jinzhi) + '\n');;
+                            File.AppendAllText(path, Convert.ToString(b, jinzhi) + '\n'); ;
                     }
                     if (flag == 1)
                         Console.WriteLine("已写入文件" + path);
@@ -241,12 +272,12 @@ namespace StreamingForAll
             {
                 foreach (byte b in p)
                 {
-                    if(b!=0)
+                    if (b != 0)
                         Console.Write(Convert.ToString(b, jinzhi) + " ");
                 }
                 if (str == "huanhang")
                     Console.Write('\n');
-                if(InputBlock.InputCount == 0)
+                if (InputBlock.InputCount == 0)
                     Console.WriteLine("已全部写完");
             });
         }
@@ -262,20 +293,20 @@ namespace StreamingForAll
         public List<byte> NextInputList = new List<byte>();
         public List<byte> huanchong = new List<byte>();
         public Action<byte[]> DataArrived;
-        public  void xieru()
+        public void xieru()
         {
-            foreach(byte b in huanchong)
+            foreach (byte b in huanchong)
                 NextInputList.Add(b);
         }
         public CutForBytesBlock(byte[] bytes)
         {
             int flag = 0;
-            int geshu=bytes.Length;
+            int geshu = bytes.Length;
             InputBlock = new ActionBlock<byte[]>(p =>
             {
                 byte b = p[0];
-                int count=0;
-                for(int i=0;i<geshu;i++)
+                int count = 0;
+                for (int i = 0; i < geshu; i++)
                 {
                     if (b == bytes[i])
                     {
@@ -302,14 +333,14 @@ namespace StreamingForAll
                     else
                         count++;
                 }
-                if(count==geshu)
+                if (count == geshu)
                 {
                     huanchong.Add(b);
                     xieru();
                     huanchong.Clear();
                     flag = 0;
                 }
-                if (flag==geshu|| InputBlock.InputCount==0)
+                if (flag == geshu || InputBlock.InputCount == 0)
                 {
                     DataArrived(NextInputList.ToArray());
                     NextInputList.Clear();
@@ -334,18 +365,18 @@ namespace StreamingForAll
         {
             InputBlock = new ActionBlock<byte[]>(p =>
             {
-                int count=0;
-                for(int i=0;i<p.Length;i++)
+                int count = 0;
+                for (int i = 0; i < p.Length; i++)
                 {
                     count++;
                     NextInputList.Add(p[i]);
-                    if((i+1)%Num==0)
+                    if ((i + 1) % Num == 0)
                     {
                         DataArrived(NextInputList.ToArray());
                         NextInputList.Clear();
                     }
                 }
-                if(count%Num!=0)
+                if (count % Num != 0)
                 {
                     DataArrived(NextInputList.ToArray());
                     NextInputList.Clear();
@@ -358,6 +389,60 @@ namespace StreamingForAll
         }
     }
 
+    public class DeleteForBytesBlock
+    {
+        public ActionBlock<byte[]> InputBlock;
+        public List<int> UnderDelete = new List<int>();
+        public Action<byte[]> DataArrived;
+        public DeleteForBytesBlock(byte[] bytes)
+        {
+            InputBlock = new ActionBlock<byte[]>(p =>
+            {
+                List<int> UnderDelete = new List<int>();
+                List<byte> NextInputList = new List<byte>();
+                for (int i = 0; i < p.Length; i++)
+                {
+                    int flag = 1;
+                    if (p[i] == bytes[0])
+                    {
+                        int j = i;
+                        for (int k = 1; k < bytes.Length; k++)
+                        {
+                            if (p[++j] == bytes[k])
+                                flag=2;
+                            else
+                            {
+                                flag = 0;
+                                break;
+                            }
+                        }
+                    }
+                    if(flag ==2)
+                    {
+                        for (int k = 0; k < bytes.Length; k++)
+                            UnderDelete.Add(i + k);
+                        i = i + bytes.Length;
+                    }
+                }
+                foreach (byte b in p)
+                {
+                    NextInputList.Add(b);
+                }
+                for(int i=UnderDelete.Count-1;i>=0;i--)
+                {
+                    NextInputList.RemoveAt(UnderDelete[i]);
+                    if (i == 0)
+                        break;
+                }
+                DataArrived(NextInputList.ToArray());
+                //NextInputList.Clear();
+            });
+        }
+        public void Enqueue(byte[] input)
+        {
+            InputBlock.Post(input);
+        }
+    }
     public class AddBytesForHead
     {
         public ActionBlock<byte[]> InputBlock;
@@ -381,8 +466,29 @@ namespace StreamingForAll
         }
     }
 
+    public class StringsToByteArray
+    {
+        public ActionBlock<string[]> InputBlock;
+        public Action<byte[]> DataArrived;
+        public StringsToByteArray(int jinzhi)
+        {
+            InputBlock = new ActionBlock<string[]>(p =>
+            {
+                List<byte> NextInputList = new List<byte>();
+                foreach (string s in p)
+                {
+                    NextInputList.Add(Convert.ToByte(s, jinzhi));
+                }
+                DataArrived(NextInputList.ToArray());
+            });
+        }
 
+        public void Enqueue(string[] input)
+        {
+            InputBlock.Post(input);
+        }
 
+    }
     class useless
     {
         static void Main()

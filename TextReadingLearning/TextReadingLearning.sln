@@ -29,9 +29,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "11.EveryTenBytesToCosoleNew
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StreamingForAll", "StreamingForAll\StreamingForAll.csproj", "{34949103-DCE1-4923-8EA2-FC66B3689254}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2.TextToText", "2.TextToText\2.TextToText.csproj", "{0BDF8F28-DF41-4AF0-8DC6-CCCBADE240E1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2.TextToText", "2.TextToText\2.TextToText.csproj", "{0BDF8F28-DF41-4AF0-8DC6-CCCBADE240E1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "3.TextToTextByLine", "3.TextToTextByLine\3.TextToTextByLine.csproj", "{B66BDA2C-FE2A-4C87-8254-B51749FEAA58}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "3.TextToTextByLine", "3.TextToTextByLine\3.TextToTextByLine.csproj", "{B66BDA2C-FE2A-4C87-8254-B51749FEAA58}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14.DeleteThreeBytesPlusThreeBytesToAnotherFile", "14.DeleteThreeBytesPlusThreeBytesToAnotherFile\14.DeleteThreeBytesPlusThreeBytesToAnotherFile.csproj", "{EFF83E38-B066-453B-AE3C-F87D62FED0F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +101,10 @@ Global
 		{B66BDA2C-FE2A-4C87-8254-B51749FEAA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B66BDA2C-FE2A-4C87-8254-B51749FEAA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B66BDA2C-FE2A-4C87-8254-B51749FEAA58}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFF83E38-B066-453B-AE3C-F87D62FED0F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFF83E38-B066-453B-AE3C-F87D62FED0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFF83E38-B066-453B-AE3C-F87D62FED0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EFF83E38-B066-453B-AE3C-F87D62FED0F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

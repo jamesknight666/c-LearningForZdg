@@ -4,7 +4,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using _6.EveryTenBytesToAnotherFile;
 using Microsoft.VisualBasic;
 using StreamingForAll;
 
@@ -15,7 +14,8 @@ namespace _12.EveryTenBytesPlusThreeStringsToAnotherFile
         static void Main()
         {
             byte[] by = { 0xAA, 0xBB, 0xCC };
-            FileReadByteBlock FRBB = new FileReadByteBlock("..\\..\\..\\..\\..\\Test1.txt", 10);
+            string[] paths = { "..\\..\\..\\..\\..\\Test1.txt" };
+            FileReadByteBlock FRBB = new FileReadByteBlock(paths, 10);
             AddBytesForHead ABFH = new AddBytesForHead(by);
             FileWriteByteBlock FWBB = new FileWriteByteBlock("..\\..\\..\\..\\..\\12.", 16, 0, 1);
             FRBB.DataArrived += (e) =>

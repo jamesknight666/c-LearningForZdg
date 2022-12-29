@@ -14,7 +14,8 @@ namespace _8.ThreeBytesToConsoleNewLine
         static void Main(string[] args)
         {
             byte[] by = { 0x31, 0x32, 0x33 };
-            FileReadByteBlock FRBB = new FileReadByteBlock("..\\..\\..\\..\\..\\Test2.txt", 1);
+            string[] paths = { "..\\..\\..\\..\\..\\Test1.txt" };
+            FileReadByteBlock FRBB = new FileReadByteBlock(paths, 1);
             CutForBytesBlock CFBB= new CutForBytesBlock(by);
             ConsoleWriteByteBlock CWBB = new ConsoleWriteByteBlock(16,"huanhang");
             FRBB.DataArrived += (e) =>

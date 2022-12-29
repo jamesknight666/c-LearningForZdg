@@ -14,7 +14,8 @@ namespace _6.EveryTenBytesToAnotherFile
         static void Main()
         {
             int i = 0;
-            FileReadByteBlock FRBB = new FileReadByteBlock("..\\..\\..\\..\\..\\Test1.txt", 10);
+            string[] paths = { "..\\..\\..\\..\\..\\Test1.txt" };
+            FileReadByteBlock FRBB = new FileReadByteBlock(paths, 10);
             //（path，进制，写入一个文件还是不同文件）
             FileWriteByteBlock FWBB = new FileWriteByteBlock("..\\..\\..\\..\\..\\6.", 16,0,1);
             FRBB.DataArrived += (e) =>

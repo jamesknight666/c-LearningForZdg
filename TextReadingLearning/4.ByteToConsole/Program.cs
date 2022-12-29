@@ -14,8 +14,9 @@ namespace _4.ByteToConsole
     {
         static void Main(string[] args)
         {
+            string[] paths = { "..\\..\\..\\..\\..\\Test1.txt" };
             //确定读入路径和每次读入byte个数
-            FileReadByteBlock FRBB = new FileReadByteBlock("..\\..\\..\\..\\..\\Test1.txt", 10);
+            FileReadByteBlock FRBB = new FileReadByteBlock(paths, 10);
             //确定要几进制输出
             ConsoleWriteByteBlock CWBB = new ConsoleWriteByteBlock(16);
             FRBB.DataArrived += (e) =>

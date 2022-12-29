@@ -14,8 +14,9 @@ namespace _1.TextToConsole
     {
         static void Main()
         {
+            string[] paths = { "..\\..\\..\\..\\..\\Test1.txt" };
             //确定读入路径
-            FileReadStringBlock FRSB = new FileReadStringBlock("..\\..\\..\\..\\..\\Test1.txt");
+            FileReadStringBlock FRSB = new FileReadStringBlock(paths);
             ConsoleWriteStringBlock CWSB = new ConsoleWriteStringBlock();
             //加入方法
             FRSB.DataArrived += (e) =>

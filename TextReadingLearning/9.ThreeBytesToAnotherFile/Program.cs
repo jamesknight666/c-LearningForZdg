@@ -14,7 +14,8 @@ namespace _9.ThreeBytesToAnotherFile
         static void Main(string[] args)
         {
             byte[] by = { 0x31, 0x32, 0x33 };
-            FileReadByteBlock FRBB = new FileReadByteBlock("..\\..\\..\\..\\..\\Test1.txt", 1);
+            string[] paths = { "..\\..\\..\\..\\..\\Test1.txt" };
+            FileReadByteBlock FRBB = new FileReadByteBlock(paths, 1);
             CutForBytesBlock CFBB = new CutForBytesBlock(by);
             FileWriteByteBlock FWBB = new FileWriteByteBlock("..\\..\\..\\..\\..\\9.", 16,0,1);
             FRBB.DataArrived += (e) =>

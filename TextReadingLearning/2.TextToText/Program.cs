@@ -14,7 +14,8 @@ namespace _2.TextToText
     {
         static void Main()
         {
-            FileReadStringBlock FRSB = new FileReadStringBlock("..\\..\\..\\..\\..\\Test1.txt");
+            string[] paths = { "..\\..\\..\\..\\..\\Test1.txt" };
+            FileReadStringBlock FRSB = new FileReadStringBlock(paths);
             //路径+输入1：所有流写入一个文件。输入0；不同流写入不同文件+输入1；显示写入进度。输入0；不显示
             FileWriteStringBlock FWSB = new FileWriteStringBlock("..\\..\\..\\..\\..\\TextToText.txt",1,1);
             FRSB.DataArrived += (e) =>
