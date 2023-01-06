@@ -1,0 +1,17 @@
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\obj\Debug\net7.0-windows\Client.csproj.AssemblyReference.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\obj\Debug\net7.0-windows\Client.ClientForm.resources
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\obj\Debug\net7.0-windows\Client.csproj.GenerateResource.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\obj\Debug\net7.0-windows\Client.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\obj\Debug\net7.0-windows\Client.AssemblyInfoInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\obj\Debug\net7.0-windows\Client.AssemblyInfo.cs
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\obj\Debug\net7.0-windows\Client.csproj.CoreCompileInputs.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\bin\Debug\net7.0-windows\Client.exe
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\bin\Debug\net7.0-windows\Client.deps.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\bin\Debug\net7.0-windows\Client.runtimeconfig.json
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\bin\Debug\net7.0-windows\Client.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\bin\Debug\net7.0-windows\Client.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\obj\Debug\net7.0-windows\Client.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\obj\Debug\net7.0-windows\refint\Client.dll
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\obj\Debug\net7.0-windows\Client.pdb
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\obj\Debug\net7.0-windows\Client.genruntimeconfig.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\Client\obj\Debug\net7.0-windows\ref\Client.dll

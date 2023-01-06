@@ -1,0 +1,3 @@
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\SocketSendFile\obj\Debug\SocketSendFile.csproj.AssemblyReference.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\SocketSendFile\obj\Debug\SocketSendFile.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\SocketSendFile\obj\Debug\SocketSendFile.csproj.CoreCompileInputs.cache
