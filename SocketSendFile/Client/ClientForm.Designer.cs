@@ -41,7 +41,7 @@
             // 
             // SendBtn
             // 
-            this.SendBtn.Location = new System.Drawing.Point(599, 358);
+            this.SendBtn.Location = new System.Drawing.Point(493, 360);
             this.SendBtn.Name = "SendBtn";
             this.SendBtn.Size = new System.Drawing.Size(94, 29);
             this.SendBtn.TabIndex = 15;
@@ -53,7 +53,7 @@
             // 
             this.MsgBox.Location = new System.Drawing.Point(107, 360);
             this.MsgBox.Name = "MsgBox";
-            this.MsgBox.Size = new System.Drawing.Size(464, 27);
+            this.MsgBox.Size = new System.Drawing.Size(371, 27);
             this.MsgBox.TabIndex = 14;
             // 
             // TextBox
@@ -110,9 +110,9 @@
             // 
             // FileBtn
             // 
-            this.FileBtn.Location = new System.Drawing.Point(438, 393);
+            this.FileBtn.Location = new System.Drawing.Point(602, 360);
             this.FileBtn.Name = "FileBtn";
-            this.FileBtn.Size = new System.Drawing.Size(133, 29);
+            this.FileBtn.Size = new System.Drawing.Size(91, 29);
             this.FileBtn.TabIndex = 16;
             this.FileBtn.Text = "SendFile";
             this.FileBtn.UseVisualStyleBackColor = true;
