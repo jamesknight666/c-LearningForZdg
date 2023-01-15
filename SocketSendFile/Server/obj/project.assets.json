@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\SocketSendFile\\Server\\Server.csproj",
+      "projectUniqueName": "C:\\Users\\DELL\\桌面\\EdgeDowload\\c-LearningForZdg-main\\c-LearningForZdg-main\\SocketSendFile\\Server\\Server.csproj",
       "projectName": "Server",
-      "projectPath": "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\SocketSendFile\\Server\\Server.csproj",
+      "projectPath": "C:\\Users\\DELL\\桌面\\EdgeDowload\\c-LearningForZdg-main\\c-LearningForZdg-main\\SocketSendFile\\Server\\Server.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\SocketSendFile\\Server\\obj\\",
+      "outputPath": "C:\\Users\\DELL\\桌面\\EdgeDowload\\c-LearningForZdg-main\\c-LearningForZdg-main\\SocketSendFile\\Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

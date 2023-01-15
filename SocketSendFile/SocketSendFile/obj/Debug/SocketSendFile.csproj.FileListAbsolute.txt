@@ -1,3 +1,11 @@
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\SocketSendFile\obj\Debug\SocketSendFile.csproj.AssemblyReference.cache
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\SocketSendFile\obj\Debug\SocketSendFile.csproj.SuggestedBindingRedirects.cache
 C:\Users\DELL\桌面\zdg学习\c#LearningForZdg\SocketSendFile\SocketSendFile\obj\Debug\SocketSendFile.csproj.CoreCompileInputs.cache
+C:\Users\DELL\桌面\EdgeDowload\c-LearningForZdg-main\c-LearningForZdg-main\SocketSendFile\SocketSendFile\bin\Debug\SocketSendFile.exe.config
+C:\Users\DELL\桌面\EdgeDowload\c-LearningForZdg-main\c-LearningForZdg-main\SocketSendFile\SocketSendFile\bin\Debug\SocketSendFile.exe
+C:\Users\DELL\桌面\EdgeDowload\c-LearningForZdg-main\c-LearningForZdg-main\SocketSendFile\SocketSendFile\bin\Debug\SocketSendFile.pdb
+C:\Users\DELL\桌面\EdgeDowload\c-LearningForZdg-main\c-LearningForZdg-main\SocketSendFile\SocketSendFile\obj\Debug\SocketSendFile.csproj.AssemblyReference.cache
+C:\Users\DELL\桌面\EdgeDowload\c-LearningForZdg-main\c-LearningForZdg-main\SocketSendFile\SocketSendFile\obj\Debug\SocketSendFile.csproj.SuggestedBindingRedirects.cache
+C:\Users\DELL\桌面\EdgeDowload\c-LearningForZdg-main\c-LearningForZdg-main\SocketSendFile\SocketSendFile\obj\Debug\SocketSendFile.csproj.CoreCompileInputs.cache
+C:\Users\DELL\桌面\EdgeDowload\c-LearningForZdg-main\c-LearningForZdg-main\SocketSendFile\SocketSendFile\obj\Debug\SocketSendFile.exe
+C:\Users\DELL\桌面\EdgeDowload\c-LearningForZdg-main\c-LearningForZdg-main\SocketSendFile\SocketSendFile\obj\Debug\SocketSendFile.pdb

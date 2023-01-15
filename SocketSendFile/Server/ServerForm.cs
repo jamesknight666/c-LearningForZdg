@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net.WebSockets;
 using System.Reflection.Metadata.Ecma335;
+using System.Net.NetworkInformation;
+using System.Linq.Expressions;
 
 namespace Server
 {
@@ -109,16 +111,29 @@ namespace Server
                 }
                 else if (data[0] == 2)
                 {
+                    if (MessageBox.Show("是否接受来自"+ ProxSocket.RemoteEndPoint.ToString()+"的文件", " ",MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+                    {
+                        AppendTextToTextBox(DateTime.Now.ToString() + "  取消接收客户端" + ProxSocket.RemoteEndPoint.ToString() + "发送的文件");
+                        continue;
+                    }
                     using (SaveFileDialog sfd = new SaveFileDialog())
                     {
                         sfd.InitialDirectory = @"C:\Users\user\Desktop";
-                        sfd.DefaultExt = "txt";
+                        //sfd.DefaultExt = "txt";
                         sfd.Filter = "文本文件(*.txt)|*.txt|所有文件(*.*)|*.*";
 
-                        sfd.ShowDialog();
-                        byte[] filedata = new byte[len - 1];
-                        Buffer.BlockCopy(data, 1, filedata, 0, len - 1);
+                        var name = new ArraySegment<byte>(data, 2, data[1]);
+                        sfd.FileName = Encoding.Default.GetString(name);
+
+                        if (sfd.ShowDialog(this) == DialogResult.Cancel)
+                        {
+                            AppendTextToTextBox(DateTime.Now.ToString() + "  取消接收客户端" + ProxSocket.RemoteEndPoint.ToString() + "发送的文件");
+                            continue;
+                        }
+                        byte[] filedata = new byte[len - 2-data[1]];
+                        Buffer.BlockCopy(data, 2 + data[1], filedata, 0, len - 2 - data[1]);
                         File.WriteAllBytes(sfd.FileName, filedata);
+                        AppendTextToTextBox(DateTime.Now.ToString() + "  成功接收客户端" + ProxSocket.RemoteEndPoint.ToString() + "：文件" + sfd.FileName);
                     }
                 }
             }
@@ -186,13 +201,27 @@ namespace Server
 
         private void FileBtn_Click(object sender, EventArgs e)
         {
-            using (OpenFileDialog ofg = new OpenFileDialog())
+            byte[] result;
+            byte[] name;
+            void ChoseFile()
             {
-                byte[] data = File.ReadAllBytes(ofg.FileName);
-                byte[] result = new byte[data.Length + 1];
-                result[0] = 2;
-                Buffer.BlockCopy(data, 0, result, 1, data.Length);
+                using (OpenFileDialog ofg = new OpenFileDialog())
+                {
 
+                    if(ofg.ShowDialog()==DialogResult.Cancel)
+                        throw new Exception("取消发送");
+                    byte[] data = File.ReadAllBytes(ofg.FileName);
+                    name = Encoding.Default.GetBytes(ofg.FileName.Substring(ofg.FileName.LastIndexOf('\\')+1, ofg.FileName.Length- ofg.FileName.LastIndexOf('\\')-1));
+                    result = new byte[data.Length+ name.Length + 2];
+                    result[0] = 2;
+                    result[1] = (byte)name.Length;    
+                    Buffer.BlockCopy(name, 0, result, 2,name.Length);
+                    Buffer.BlockCopy(data, 0, result, name.Length + 2, data.Length);
+                }
+            }
+
+            try
+            {
                 if (ClientListBox.SelectedIndex < 1)
                 {
                     MessageBox.Show("请选择要发送的客户端");
@@ -207,18 +236,24 @@ namespace Server
                     }
                     else
                     {
+                        ChoseFile();
                         foreach (var ProxSocket in ProxSocketDic)
                         {
                             ProxSocket.Value.Send(result);
                         }
-                        MsgBox.Clear();
+                        AppendTextToTextBox(DateTime.Now.ToString() + "  成功发送给所有客户端：文件" + Encoding.Default.GetString(name));
                     }
                 }
                 else
                 {
+                    ChoseFile();
                     ProxSocketDic[ClientListBox.Text].Send(result);
-                    MsgBox.Clear();
+                    AppendTextToTextBox(DateTime.Now.ToString() + "  成功发送给客户端" + ProxSocketDic[ClientListBox.Text].RemoteEndPoint.ToString() + "：文件" + Encoding.Default.GetString(name));
                 }
+            }
+            catch
+            {
+                return;
             }
         }
 

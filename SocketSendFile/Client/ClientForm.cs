@@ -9,6 +9,7 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Xml.Linq;
 
 namespace Client
 {
@@ -123,16 +124,29 @@ namespace Client
                 }
                 else if (data[0] == 2)
                 {
+                    if (MessageBox.Show("是否接受来自" + ProxSocket.RemoteEndPoint.ToString() + "的文件", " ", MessageBoxButtons.OKCancel) == DialogResult.Cancel)
+                    {
+                        AppendTextToTextBox(DateTime.Now.ToString() + "  取消接收服务器" + ProxSocket.RemoteEndPoint.ToString() + "发送的文件");
+                        continue;
+                    }
                     using (SaveFileDialog sfd = new SaveFileDialog())
                     {
+                        sfd.InitialDirectory = @"C:\Users\user\Desktop";
                         sfd.DefaultExt = "txt";
                         sfd.Filter = "文本文件(*.txt)|*.txt|所有文件(*.*)|*.*";
-                        if (sfd.ShowDialog(this) != DialogResult.OK)
-                            return;
-                        byte[] filedata = new byte[len - 1];
-                        Buffer.BlockCopy(data, 1, filedata, 0, len - 1);
-                        File.WriteAllBytes(sfd.FileName, filedata);
 
+                        var name = new ArraySegment<byte>(data, 2, data[1]);
+                        sfd.FileName = Encoding.Default.GetString(name);
+
+                        if(sfd.ShowDialog(this)==DialogResult.Cancel)
+                        {
+                            AppendTextToTextBox(DateTime.Now.ToString() + "  取消接收服务器" + ProxSocket.RemoteEndPoint.ToString() + "发送的文件");
+                            continue;
+                        }
+                        byte[] filedata = new byte[len - 2 - data[1]];
+                        Buffer.BlockCopy(data, 2 + data[1], filedata, 0, len - 2 - data[1]);
+                        File.WriteAllBytes(sfd.FileName, filedata);
+                        AppendTextToTextBox(DateTime.Now.ToString() + "  成功接收服务器" + ProxSocket.RemoteEndPoint.ToString() + "：文件" + sfd.FileName);
                     }
                 }
 
@@ -141,8 +155,8 @@ namespace Client
 
         private void StopConnect()
         {
-                ClientSocket.Shutdown(SocketShutdown.Both);
-                ClientSocket.Close(100);
+            ClientSocket.Shutdown(SocketShutdown.Both);
+            ClientSocket.Close(100);
         }
 
         public void AppendTextToTextBox(string str)
@@ -167,15 +181,28 @@ namespace Client
 
         private void FileBtn_Click(object sender, EventArgs e)
         {
-            using (OpenFileDialog ofg = new OpenFileDialog())
+            byte[] result;
+            byte[] name;
+            try
             {
-                if (ofg.ShowDialog() != DialogResult.OK)
-                    return;
-                byte[] data = File.ReadAllBytes(ofg.FileName);
-                byte[] result = new byte[data.Length + 1];
-                result[0] = 2;
-                Buffer.BlockCopy(data, 0, result, 1, data.Length);
+                using (OpenFileDialog ofg = new OpenFileDialog())
+                {
+                    if (ofg.ShowDialog() == DialogResult.Cancel)
+                        throw new Exception("取消发送");
+                    byte[] data = File.ReadAllBytes(ofg.FileName);
+                    name = Encoding.Default.GetBytes(ofg.FileName.Substring(ofg.FileName.LastIndexOf('\\') + 1, ofg.FileName.Length - ofg.FileName.LastIndexOf('\\') - 1));
+                    result = new byte[data.Length + name.Length + 2];
+                    result[0] = 2;
+                    result[1] = (byte)name.Length;
+                    Buffer.BlockCopy(name, 0, result, 2, name.Length);
+                    Buffer.BlockCopy(data, 0, result, name.Length + 2, data.Length);
+                }
                 ClientSocket.Send(result);
+                AppendTextToTextBox(DateTime.Now.ToString() + "  成功发送给服务器" + ClientSocket.RemoteEndPoint.ToString() + "：文件" + Encoding.Default.GetString(name));
+            }
+            catch
+            {
+                return;
             }
         }
     }

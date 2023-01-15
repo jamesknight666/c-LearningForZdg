@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\SocketSendFile\\Client\\Client.csproj": {}
+    "C:\\Users\\DELL\\桌面\\EdgeDowload\\c-LearningForZdg-main\\c-LearningForZdg-main\\SocketSendFile\\Client\\Client.csproj": {}
   },
   "projects": {
-    "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\SocketSendFile\\Client\\Client.csproj": {
+    "C:\\Users\\DELL\\桌面\\EdgeDowload\\c-LearningForZdg-main\\c-LearningForZdg-main\\SocketSendFile\\Client\\Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\SocketSendFile\\Client\\Client.csproj",
+        "projectUniqueName": "C:\\Users\\DELL\\桌面\\EdgeDowload\\c-LearningForZdg-main\\c-LearningForZdg-main\\SocketSendFile\\Client\\Client.csproj",
         "projectName": "Client",
-        "projectPath": "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\SocketSendFile\\Client\\Client.csproj",
+        "projectPath": "C:\\Users\\DELL\\桌面\\EdgeDowload\\c-LearningForZdg-main\\c-LearningForZdg-main\\SocketSendFile\\Client\\Client.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\DELL\\桌面\\zdg学习\\c#LearningForZdg\\SocketSendFile\\Client\\obj\\",
+        "outputPath": "C:\\Users\\DELL\\桌面\\EdgeDowload\\c-LearningForZdg-main\\c-LearningForZdg-main\\SocketSendFile\\Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
